@@ -9,21 +9,13 @@ body {
 a {
   text-decoration:none;
 }
-#navbar {
-  display: none;
-}
-@media (max-width:480px) {
-  .content-inner {
-    margin: 0;
-  }
-}
 @media only screen and (min-width:481px) {
-  .content-inner {
+  body {
     margin: 0 10px;
   }
 }
 @media screen and (min-width:1025px) {
-  .content-inner {
+  body {
     margin: 0 auto;
     width: 1001px;
   }
@@ -98,7 +90,6 @@ header h2 {
 ----------------------------------------------- */
 nav {
   clear:both;
-  overflow-x: hidden;
 }
 nav ul {
   padding: 0;
@@ -133,13 +124,13 @@ nav ul li a:focus {
   transition: 0.5s;
 }
 @media (max-width:480px) {
-  .tabs {
+  nav {
     margin: 0 2px;
   }
-  .tabs ul {
+  nav ul {
     display: none;
   }
-  .tabs select {
+  nav select {
     width: 100%;
     background:  #293768;
     color: #ffffff;
@@ -148,37 +139,26 @@ nav ul li a:focus {
     border: none;
     padding: 5px 6px;
   }
-  .tabs select option {
+  nav select option {
     background: #293768;
     color: #fdb94c;
   }
-  .tabs select option:checked {
+  nav select option:checked {
     background:  linear-gradient(#293768, #293768);
     color: #ffffff;
   }
-  .tabs select option:active,
-  .tabs select option:hover,
-  .tabs select option:focus {
+  nav select option:active,
+  nav select option:hover,
+  nav select option:focus {
     background:  linear-gradient(#fdb94c, #fdb94c);
     color: #293768;
   }
-  .tabs .pagelist-arrow {
-    position: absolute;
-    top: 4px;
-    right: 6px;
-    background: #293768;
-    color: #ffffff;
-    padding: 0 2px;
-  }
 }
 @media (min-width:481px) {
-  .tabs select {
+  nav select {
     display: none;
   }
-  .tabs .pagelist-arrow {
-    display: none;
-  }
-  .tabs {
+  nav {
     float: left;
     position: relative;
     left: 50%;
@@ -220,12 +200,12 @@ nav ul li a:focus {
 }
 .post-title {
   font-size: 20px;
-  clear: right;
+  clear: both;
 }
 .post-title em {
   font-style: normal;
 }
-.static_page .post-title {
+.post-title {
   font-family: 'Liberty D X80', serif;
   font-size: 26px;
   text-align: center;
@@ -234,11 +214,11 @@ nav ul li a:focus {
   border-radius: 10px;
   padding: 2px 1em;
 }
-.static_page .post-title em {
+.post-title em {
   font-family: 'Zinjaro X60', serif;
 }
 @media (min-width:769px) {
-  .static_page .post-title {
+  .post-title {
     letter-spacing: 0.2em;
     font-size: 36px;
   }
