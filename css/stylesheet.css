@@ -28,6 +28,7 @@ a {
     width: 1001px;
   }
 }
+
 /* Header
 ----------------------------------------------- */
 header {
@@ -92,24 +93,26 @@ header h2 {
     min-height: 102px;
   }
 }
+
 /* Tabs
 ----------------------------------------------- */
-.tabs-outer {
+nav {
   clear:both;
+  overflow-x: hidden;
 }
-.tabs .widget ul {
+nav ul {
   padding: 0;
   float: left;
   position: relative;
   right: 50%;
   margin: 10px 0 0 0;
 }
-.tabs .widget li {
+nav li {
   margin: 0;
   padding: 0;
   float: left;
 }
-.tabs .widget ul li a {
+nav ul li a {
   display: inline-block;
   text-decoration: none;
   border-radius: 10px;
@@ -117,14 +120,14 @@ header h2 {
   color: #fdb94c;
   transition: 0.5s;
 }
-.tabs .widget ul li.selected a,
-.tabs .widget ul li a:active {
+nav ul li.selected a,
+nav ul li a:active {
   background:  #293768;
   color: #ffffff;
   font-weight: normal;
 }
-.tabs .widget ul li a:hover,
-.tabs .widget ul li a:focus {
+nav ul li a:hover,
+nav ul li a:focus {
   background:  #fdb94c;
   color: #293768;
   transition: 0.5s;
@@ -175,35 +178,33 @@ header h2 {
   .tabs .pagelist-arrow {
     display: none;
   }
-  .tabs-outer {
-    overflow-x: hidden;
-  }
   .tabs {
     float: left;
     position: relative;
     left: 50%;
     top: -10px;
   }
-  .tabs .widget ul li {
+  nav ul li {
     margin: 0 5px;
   }
-  .tabs .widget ul li a {
+  nav ul li a {
     padding: 5px 6px;
   }
 }
 @media (min-width:769px) {
-  .tabs .widget ul li {
+  nav ul li {
     margin: 0 5px;
   }
-  .tabs .widget ul li a {
+  nav ul li a {
     padding: 5px 10px;
     font-weight: bold;
   }
-  .tabs .widget ul li.selected a,
-  .tabs .widget ul li a:active {
+  nav ul li.selected a,
+  nav ul li a:active {
     font-weight:bold;
   }
 }
+
 /* Posts
 ----------------------------------------------- */
 .date-header {
