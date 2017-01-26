@@ -198,123 +198,83 @@ nav ul li a:focus {
   margin: 0 0 10px 0;
   float: right;
 }
-.post-title {
-  font-size: 20px;
+main h3 {
   clear: both;
-}
-.post-title em {
-  font-style: normal;
-}
-.post-title {
+  background: #293768;
+  color: #fdb94c;
   font-family: 'Liberty D X80', serif;
   font-size: 26px;
   text-align: center;
-  color: #fdb94c;
-  background: #293768;
   border-radius: 10px;
   padding: 2px 1em;
 }
-.post-title em {
+main h3 em {
+  font-style: normal;
   font-family: 'Zinjaro X60', serif;
 }
 @media (min-width:769px) {
-  .post-title {
+  main h3 {
     letter-spacing: 0.2em;
     font-size: 36px;
   }
 }
-.item .post-title,
-.post-title a {
+main h3 a {
   display: block;
   color: #fdb94c;
   background: #293768;
   border-radius: 10px;
   padding: 5px 1em;
 }
-.post-title a:hover {
+main h3 a:hover {
   color: #293768;
   background: #fdb94c;
   transition: 0.5s;
 }
-.post-header {
-  margin: 10px;
-}
-.post-body {
+article {
   position: relative;
   background: #293768;
   color: #ffffff;
   border-radius: 10px;
   width: auto;
   padding: 0.1em 1em;
-  margin: 0 0 10px 0;
+  margin: 10px 0;
 }
-.post-body ul.social {
-  margin: 1em 0 0 0;
-  padding: 0;
-  text-align: right;
-}
-.post-body ul.social li {
-  margin: 0 5px;
-  display: inline-block;
-}
-.post-body ul.social li a:hover {
-  background: transparent;
-}
-.post-body h4 {
-  color: #fdb94c;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: right;
-}
-@media (max-width:320px) {
-  .post-body h4 {
-    clear: both;
-    text-align: left;
-  }
-  .post-body ul.social {
-    margin: 1em 0 1em 0;
-    text-align: left;
-  }
-  .post-body ul.social li {
-    margin: 5px 0;
-    display: block;
-  }
-}
-.post-body p {
+article p {
+  line-height: 1.4em;
   margin: 1em 0;
 }
-.post-body p.intro {
+article p.intro {
 }
-.post-body span[lang] {
+article span[lang] {
   font-style: italic;
 }
-.post-body a {
+article a {
   color: #fdb94c;
   font-weight: bold;
   font-size: 90%;
 }
-.post-body a:hover {
+article a:hover {
   background: #fdb94c;
   color: #293768;
 }
-.post-body img {
+article img {
   max-width: 100%;
   border-radius: 10px;
 }
-.post-body img.izda {
+article img.izda {
   float: left;
   margin: 1em 1em 1em 0;
   max-width: 50%;
 }
-.post-body .video-container {
+article .video-container {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
 }
-.post-body .video-container iframe,
-.post-body .video-container object,
-.post-body .video-container embed {
+article .video-container iframe,
+article .video-container object,
+article .video-container embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -343,7 +303,7 @@ body,
 .content-outer {
   min-height: 100%;
 }
-.main-outer {
+main {
   padding-bottom: 1px;
 }
 footer {
