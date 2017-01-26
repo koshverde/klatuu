@@ -30,7 +30,7 @@ a {
 }
 /* Header
 ----------------------------------------------- */
-#header {
+header {
   position: relative;
   padding: 0;
   color: #fdb94c;
@@ -38,87 +38,84 @@ a {
   text-align: right;
   text-shadow:0 0 50px #fdb94c;
 }
-#header em {
+header em {
   font-family: 'Zinjaro X60', serif;
   font-style: normal;
 }
-#header #header-inner {
-  overflow: visible;
-}
-#header .title {
+header h1 {
   float: right;
   max-width: 6em;
   line-height: 1em;
 }
-#header .description {
+header h2 {
   margin: 10px 0 0 0;
 }
 @media (max-width:320px) {
-  #header {
+  header {
     background: transparent url('../img/ojos-200.jpg') no-repeat center 32px;
     min-height: 73px;
   }
-  #header .title{
+  header h1 {
     margin: 51px 2px 0 2px;
     font-size: 32px;
   }
-  #header .description{
+  header h2 {
     margin-right: 2px;
     font-size: 13px;
   }
 }
 @media (min-width:321px) and (max-width:480px) {
-  #header {
+  header {
     background: transparent url('../img/ojos-200.jpg') no-repeat left top;
     min-height: 41px;
   }
-  #header .title{
+  header h1 {
     margin: 0 4px;
     font-size: 32px;
   }
-  #header .description{
+  header h2 {
     margin-right: 4px;
     font-size: 13px;
   }
 }
 @media (min-width:481px) and (max-width:768px) {
-  #header {
+  header {
     background: transparent url('../img/ojos-300.jpg') no-repeat left top;
     min-height: 82px;
   }
-  #header .title{
+  header h1{
     margin: 0 6px;
     font-size: 42px;
   }
-  #header .description{
+  header h2 {
     margin-right: 6px;
     font-size: 17px;
   }
 }
 @media (min-width:769px) and (max-width:1024px){
-  #header {
+  header {
     background: transparent url('../img/ojos-400.jpg') no-repeat left top;
     min-height: 82px;
   }
-  #header .title{
+  header h1 {
     margin: 0 32px;
     font-size: 52px;
   }
-  #header .description{
+  header h2 {
     margin-right: 32px;
     font-size: 21px;
   }
 }
 @media (min-width:1025px) {
-  #header {
+  header {
     background: transparent url('../img/ojos-500-a.jpg') no-repeat left top;
     min-height: 102px;
   }
-  #header .title{
+  header h1 {
     margin: 0 32px;
     font-size: 52px;
   }
-  #header .description{
+  header h2 {
     margin-right: 32px;
     font-size: 21px;
   }
