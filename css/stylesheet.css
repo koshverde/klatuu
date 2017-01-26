@@ -187,17 +187,6 @@ nav ul li a:focus {
 
 /* Posts
 ----------------------------------------------- */
-.date-header {
-  padding: 0.2em 1em;
-  font-size: 14px;
-  font-weight:bold;
-  text-align: right;
-  color: #fdb94c;
-  background: #293768;
-  border-radius: 30px;
-  margin: 0 0 10px 0;
-  float: right;
-}
 main h3 {
   clear: both;
   background: #293768;
@@ -281,19 +270,7 @@ article .video-container embed {
   width: 100%;
   height: 100%;
 }
-.post-footer {
-  display: none;
-}
-/* Status
----------------------------------------------- */
-.status-msg-wrap .status-msg-body {
-  background: #293768;
-  color: #ffffff;
-  border-radius: 10px;
-}
-.status-msg-wrap .status-msg-bg {
-  background: transparent;
-}
+
 /* Footer
 ---------------------------------------------- */
 body,
