@@ -313,67 +313,45 @@ article .video-container embed {
 
 /* Footer
 ---------------------------------------------- */
-body,
-.content {
-  height: 100%;
-}
-.content-outer {
-  min-height: 100%;
-}
 main {
   padding-bottom: 1px;
 }
 footer {
   clear:both;
 }
-.footer-outer {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
 .footer-inner {
   padding-top: 1.5em;
   font-size: 12px;
 }
-.footer-inner .social {
+footer .social {
   position: relative;
   left: 50%;
   float: left;
   margin-bottom: 20px;
 }
-.footer-inner .social ul {
+footer ul {
   list-style: none;
   position: relative;
   left: -50%;
 }
-.footer-inner .social ul li {
+footer ul li {
   float: left;
 }
-.footer-inner .foot {
-  clear: both;
-}
 @media (max-width:480px) {
-  .blog-pager {
-    padding-bottom: 126px;
-  }
-  .footer-outer {
+  footer {
     background: url('../img/pie-1024.gif') no-repeat center bottom;
     height: 126px;
   }
-  .footer-inner .social ul li {
+  footer ul li {
     margin: 0 5px;
   }
 }
 @media (min-width:481px) {
-  .blog-pager {
-    padding-bottom: 167px;
-  }
-  .footer-outer {
+  footer {
     background: url('../img/pie.gif') no-repeat center bottom;
     height: 167px;
   }
-  .footer-inner .social ul li {
+  footer ul li {
     margin: 0 15px;
   }
 }
