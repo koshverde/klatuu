@@ -10,12 +10,12 @@ a {
   text-decoration:none;
 }
 @media only screen and (min-width:481px) {
-  body {
+  header, main {
     margin: 0 10px;
   }
 }
 @media screen and (min-width:1025px) {
-  body {
+  header, main {
     margin: 0 auto;
     width: 1001px;
   }
