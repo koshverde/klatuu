@@ -221,10 +221,7 @@ main {
 }
 footer {
   clear:both;
-}
-.footer-inner {
   padding-top: 1.5em;
-  font-size: 12px;
 }
 footer .social {
   position: relative;
