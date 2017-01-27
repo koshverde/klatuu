@@ -1,5 +1,5 @@
 
-/* Content
+/* Base
 ----------------------------------------------- */
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -73,7 +73,6 @@ header h2 {
   header {
     background: transparent url('../img/ojos-400.jpg') no-repeat left top;
     font-size: 52px;
-    margin-right: 32px;
     min-height: 82px;
   }
 }
@@ -81,119 +80,19 @@ header h2 {
   header {
     background: transparent url('../img/ojos-500-a.jpg') no-repeat left top;
     font-size: 52px;
-    margin-right: 32px;
     min-height: 102px;
   }
 }
 
-/* Tabs
------------------------------------------------ */
-nav {
-  clear:both;
-}
-nav ul {
-  padding: 0;
-  float: left;
-  position: relative;
-  right: 50%;
-  margin: 10px 0 0 0;
-}
-nav li {
-  margin: 0;
-  padding: 0;
-  float: left;
-}
-nav ul li a {
-  display: inline-block;
-  text-decoration: none;
-  border-radius: 10px;
-  background: #293768;
-  color: #fdb94c;
-  transition: 0.5s;
-}
-nav ul li a:active {
-  background:  #293768;
-  color: #ffffff;
-  font-weight: normal;
-}
-nav ul li a:hover,
-nav ul li a:focus {
-  background:  #fdb94c;
-  color: #293768;
-  transition: 0.5s;
-}
-@media (max-width:480px) {
-  nav {
-    margin: 0 2px;
-  }
-  nav ul {
-    display: none;
-  }
-  nav select {
-    width: 100%;
-    background:  #293768;
-    color: #ffffff;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    border: none;
-    padding: 5px 6px;
-  }
-  nav select option {
-    background: #293768;
-    color: #fdb94c;
-  }
-  nav select option:checked {
-    background:  linear-gradient(#293768, #293768);
-    color: #ffffff;
-  }
-  nav select option:active,
-  nav select option:hover,
-  nav select option:focus {
-    background:  linear-gradient(#fdb94c, #fdb94c);
-    color: #293768;
-  }
-}
-@media (min-width:481px) {
-  nav select {
-    display: none;
-  }
-  nav {
-    float: left;
-    position: relative;
-    left: 50%;
-    top: -10px;
-  }
-  nav ul li {
-    margin: 0 5px;
-  }
-  nav ul li a {
-    padding: 5px 6px;
-  }
-}
-@media (min-width:769px) {
-  nav ul li {
-    margin: 0 5px;
-  }
-  nav ul li a {
-    padding: 5px 10px;
-    font-weight: bold;
-  }
-  nav ul li a:active {
-    font-weight:bold;
-  }
-}
-
-/* Posts
+/* Main
 ----------------------------------------------- */
 main h3 {
-  clear: both;
-  background: #293768;
   color: #fdb94c;
   font-family: 'Liberty D X80', serif;
   font-size: 26px;
   text-align: center;
-  border-radius: 10px;
   padding: 2px 1em;
+  margin: 0 0 0.8em 0;
 }
 main h3 em {
   font-style: normal;
@@ -201,29 +100,17 @@ main h3 em {
 }
 @media (min-width:769px) {
   main h3 {
-    letter-spacing: 0.2em;
-    font-size: 36px;
+    font-size: 30px;
   }
 }
-main h3 a {
-  display: block;
-  color: #fdb94c;
-  background: #293768;
-  border-radius: 10px;
-  padding: 5px 1em;
-}
-main h3 a:hover {
-  color: #293768;
-  background: #fdb94c;
-  transition: 0.5s;
-}
 article {
+  clear: both;
   position: relative;
   background: #293768;
   color: #ffffff;
   border-radius: 10px;
   width: auto;
-  padding: 0.1em 1em;
+  padding: 0.1em 1em 0.5em 1em;
   margin: 10px 0;
 }
 article p {
@@ -252,14 +139,6 @@ article img.izda {
   float: left;
   margin: 1em 1em 1em 0;
   max-width: 50%;
-}
-article ul {
-  padding: 0 2.5em;
-  margin: .5em 0;
-  line-height: 1.4;
-}
-article li {
-  margin: .25em 0;
 }
 
 article ul.social {
@@ -293,6 +172,30 @@ article h4 {
     margin: 5px 0;
     display: block;
   }
+}
+
+article ul.tiendas li {
+  float:left;
+  width:100%;
+  font-size:smaller;
+  margin: .8em 0;
+}
+article ul.tiendas li a {
+  font-size:larger;
+  font-weight: normal;
+}
+@media (min-width:769px) {
+  article ul.tiendas li {
+    width:33%
+  }
+}
+@media (min-width:481px) and (max-width:768px) {
+  article ul.tiendas li {
+    width:50%
+  }
+}
+article .nota {
+  clear:both;
 }
 
 article .video-container {

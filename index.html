@@ -16,29 +16,8 @@
     <h1>Las mem<em>o</em>rias de Kl<em>a</em>tuu</h1>
   </header>
 
-  <nav>
-    <select id="PageList1_select">
-      <option value="#libro">El libro</option>
-      <option value="#autor">El autor</option>
-      <option value="#comprar">Comprar</option>
-    </select>
-    <ul>
-      <li><a href="#libro">El libr<em>o</em></a></li>
-      <li><a href="#autor">El <em>a</em>utor</a></li>
-      <li><a href="#comprar">Compr<em>a</em>r</a></li>
-    </ul>
-    <script src="./Las memorias de Klatuu_ El libro_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript">
-      document.getElementById('PageList1_select').onchange=function(){
-        var e  = document.getElementById('PageList1_select');
-        if (e.options[e.selectedIndex].value != '') document.location.href = e.options[e.selectedIndex].value;
-      }
-    </script>
-  </nav>
-
-
   <main>
-    <h3 id="libro">El libr<em>o</em></h3>
-    <article>
+    <article id="libro">
       <img class="izda" src="img/portada-klatuu.jpg" alt="Portada de &#171;El viaje del Argos: Las memorias de Klatuu&#187;" />
 
       <p class="intro">Madrid, febrero de 2001. Un joven universitario llamado Alberto Jiménez, es testigo de la caída de una extraña aeronave. Entre sus restos hay un único e imposible superviviente: un alienígena. A partir de ese momento, se ve convertido en el centro de atención de dos grupos que utilizan tecnología desconocida e incluyen extraños personajes en sus filas. Perseguido por unos y protegido por otros, Alberto guarda en su cabeza una información muy valiosa: las memorias de Klatuu.</p>
@@ -53,9 +32,7 @@
 
     </article>
 
-
-    <h3 id="el autor">El <em>a</em>utor</h3>
-    <article>
+    <article id="autor">
       <img class="izda" src="img/biopic-350.jpg" alt="" />
 
       <ul class="social">
@@ -77,11 +54,10 @@
       <p>Y así, tras varias revisiones y cambios (algunos para evitar caer en los mismos errores que comento en <a href="http://www.malaciencia.info">MalaCiencia</a>), aquí tenéis mi primera novela. Mi intención es que no sea la última.</p>
     </article>
 
-    <h3 id="comprar">Compr<em>a</em>r</h3>
-    <article>
-      <p>La novela &#171;El viaje del Argos: Las memorias de Klatuu&#187; se puede comprar en las siguientes tiendas:</p>
+    <article id="comprar">
+      <h3>Dó<em>n</em>de c<em>o</em>mpr<em>a</em>rlo</h3>
 
-      <ul>
+      <ul class="tiendas">
         <li><a href="http://www.agapea.com/libros/El-viaje-del-Argos-las-memorias-de-Klatuu-9788416143122-i.htm">Agapea</a> (papel)</li>
         <li><a href="http://www.akiracomics.com/product/42510/viaje-del-argos-memorias-de-klatuu-rustica">Akira Comics</a> (papel)</li>
         <li><a href="http://www.amazon.es/viaje-del-Argos-memorias-Klatuu/dp/8416143129/">Amazon</a> (papel y kindle)</li>
@@ -93,8 +69,7 @@
         <li><a href="http://www.libreriaproteo.com/libro/ver/id/1405435/titulo/el-viaje-del-argos-1-las-memorias-de-klatuu.html">Proteo y Promoteo</a> (papel)</li>
         <li><a href="http://www.ultimacomic.es/el-viaje-del-argos-las-memorias-de-klatuu-isbn-9788416143122.htm">Ultimacomic</a> (papel)</li>
       </ul>
-
-      <p>Esta lista se actualizárá periódicamente (20/08/2015).</p>
+      <div class="nota"></div>
     </article>
 
   </main>
