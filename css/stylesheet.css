@@ -204,9 +204,7 @@ article .video-container {
   height: 0;
   overflow: hidden;
 }
-article .video-container iframe,
-article .video-container object,
-article .video-container embed {
+article .video-container iframe {
   position: absolute;
   top: 0;
   left: 0;
