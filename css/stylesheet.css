@@ -215,6 +215,7 @@ article .video-container iframe {
 /* Footer
 ---------------------------------------------- */
 main {
+  display:block;
   padding-bottom: 1px;
 }
 footer {
